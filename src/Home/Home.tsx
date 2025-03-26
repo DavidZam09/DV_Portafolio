@@ -29,12 +29,6 @@ function Home() {
     message: string;
   }
 
-  interface FormErrors {
-    name: string;
-    email: string;
-    message: string;
-  }
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     if (validateForm()) {
